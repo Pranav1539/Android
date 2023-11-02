@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:text="REGISTRATION FORM"
+        android:textColor="@color/ddarkblue"
+        android:textSize="35dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ddarkblue"
+            android:hint="USERNAME"
+            android:textColor="@color/white"
+            android:fontFamily="@font/baloo"
+            android:textAlignment="center"
+            android:textColorHint="@color/white"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/fullname"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:layout_marginTop="30dp"
+            android:background="@color/darkblue"
+            android:hint="FULLNAME"
+            android:fontFamily="@font/baloo"
+            android:textAlignment="center"
+            android:textColorHint="@color/white"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/country"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fullname"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/baloo"
+            android:background="@color/blue"
+            android:hint="COUNTRY"
+            android:textAlignment="center"
+            android:textColorHint="@color/white"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/country"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/baloo"
+            android:background="@color/lightblue"
+            android:hint="EMAIL"
+            android:textAlignment="center"
+            android:textColorHint="@color/white"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/phonenumber"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email"
+            android:layout_marginTop="30dp"
+            android:background="@color/llightblue"
+            android:hint="PHONE NUMBER"
+            android:inputType="number"
+            android:fontFamily="@font/baloo"
+            android:textAlignment="center"
+            android:textColorHint="@color/white"
+            android:textSize="25dp" />
+
+
+
+    </RelativeLayout>
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="4dp"
+            android:layout_y="-1dp"
+            android:fontFamily="@font/baloo"
+            android:text="GENDER"
+            android:textColor="@color/blue"
+            android:textSize="25dp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/rg"
+            android:layout_x="110dp"
+            android:layout_y="-1dp">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_x="114dp"
+                android:layout_y="4dp"
+                android:fontFamily="@font/baloo"
+                android:text="MALE"
+                android:id="@+id/male"
+                android:textColor="@color/ddarkblue"
+                android:textSize="25dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_x="114dp"
+                android:layout_y="4dp"
+                android:fontFamily="@font/baloo"
+                android:text="FEMALE"
+                android:id="@+id/female"
+                android:textColor="@color/llightblue"
+                android:textSize="25dp" />
+
+        </RadioGroup>
+
+
+
+    </AbsoluteLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+        <TableRow>
+            <TextView
+                android:textSize="25dp"
+                android:textColor="@color/darkblue"
+                android:text="Date of Birth:"
+                android:fontFamily="@font/baloo"
+                />
+            <EditText
+                android:hint="DD"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:background="@color/darkblue"
+                android:fontFamily="@font/baloo"
+                android:textSize="25dp"
+                android:inputType="number"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/date"/>
+
+            <EditText
+                android:textColor="@color/white"
+                android:hint="MM"
+                android:inputType="number"
+                android:textColorHint="@color/white"
+                android:background="@color/darkblue"
+                android:fontFamily="@font/baloo"
+                android:textSize="25dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/month"/>
+
+            <EditText
+                android:textColor="@color/white"
+                android:hint="YYYY"
+                android:textColorHint="@color/white"
+                android:background="@color/darkblue"
+                android:fontFamily="@font/baloo"
+                android:textSize="25dp"
+                android:inputType="number"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/year"/>
+
+
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/ddarkblue"
+        android:fontFamily="@font/baloo"
+        android:text="REGISTER"
+        android:textSize="25dp" />
+
+</LinearLayout>
